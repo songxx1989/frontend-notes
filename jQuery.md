@@ -44,3 +44,27 @@
 * mouseover和mouseout 冒泡
 * mouseenter和mouseleave不冒泡
 * hover(f1, f2)等同于mouseenter(f1)和mouseleave(f2)
+
+### 手动触发事件
+* trigger() 不会触发addEventListener()注册的事件
+* triggerHandler() 不冒泡、无默认行为
+* jQuery.event.trigger() 全局触发事件
+
+### 事件代理
+* delegate() undelegate()
+
+### 禁用动画
+* $.fx.off = true 全局禁用动画
+
+### 扩展jQuery缓动函数
+* jQuery.easing["squareroot"]=Math.sqrt
+
+### 停止动画
+* stop() 参数1为true取消动画队列，参数2为true将动画的css属性值设置成目标值
+
+### ajax状态码
+* success 请求成功
+* notmodified 请求成功，304无修改
+* error 请求失败，http错误
+* timeout 请求失败，超时
+* parsererror 请求成功，解析失败
